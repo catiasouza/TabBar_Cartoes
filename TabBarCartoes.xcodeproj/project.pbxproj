@@ -144,8 +144,8 @@
 			children = (
 				54B53A4C2548DEB000DDC282 /* Movimentacao.swift */,
 				542E24DF254A475400413BEC /* Invoice.swift */,
-				542E24D72549E00500413BEC /* Cartoes.swift */,
 				542E24E7254A4A9C00413BEC /* invoice.json */,
+				542E24D72549E00500413BEC /* Cartoes.swift */,
 				542E24D42549DFEA00413BEC /* cartoes.json */,
 				54B53A502548E12E00DDC282 /* despesas.json */,
 			);

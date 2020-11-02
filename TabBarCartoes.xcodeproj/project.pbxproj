@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54165E282548C55500FB4931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E272548C55500FB4931 /* AppDelegate.swift */; };
+		54165E2A2548C55500FB4931 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E292548C55500FB4931 /* SceneDelegate.swift */; };
+		54165E2C2548C55500FB4931 /* CrediCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E2B2548C55500FB4931 /* CrediCardVC.swift */; };
+		54165E2F2548C55500FB4931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54165E2D2548C55500FB4931 /* Main.storyboard */; };
+		54165E322548C55500FB4931 /* TabBarCartoes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54165E302548C55500FB4931 /* TabBarCartoes.xcdatamodeld */; };
+		54165E342548C55900FB4931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54165E332548C55900FB4931 /* Assets.xcassets */; };
+		54165E372548C55900FB4931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54165E352548C55900FB4931 /* LaunchScreen.storyboard */; };
+		54165E412548CFEE00FB4931 /* AccountBalanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E402548CFEE00FB4931 /* AccountBalanceVC.swift */; };
+		54165E4B2548D87D00FB4931 /* ExtratoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E492548D87D00FB4931 /* ExtratoCell.swift */; };
+		54165E4C2548D87D00FB4931 /* ExtratoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54165E4A2548D87D00FB4931 /* ExtratoCell.xib */; };
+		542E24C82549BD7300413BEC /* CreditCardContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E24C62549BD7300413BEC /* CreditCardContainerCell.swift */; };
+		542E24C92549BD7300413BEC /* CreditCardContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542E24C72549BD7300413BEC /* CreditCardContainerCell.xib */; };
+		542E24D12549D8AC00413BEC /* CreditCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E24CF2549D8AC00413BEC /* CreditCardCollectionViewCell.swift */; };
+		542E24D22549D8AC00413BEC /* CreditCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542E24D02549D8AC00413BEC /* CreditCardCollectionViewCell.xib */; };
+		542E24D52549DFEA00413BEC /* cartoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 542E24D42549DFEA00413BEC /* cartoes.json */; };
+		542E24D82549E00500413BEC /* Cartoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E24D72549E00500413BEC /* Cartoes.swift */; };
+		542E24DC254A3B9A00413BEC /* InvoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E24DB254A3B9A00413BEC /* InvoiceVC.swift */; };
+		542E24E0254A475400413BEC /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E24DF254A475400413BEC /* Invoice.swift */; };
+		542E24E8254A4A9C00413BEC /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 542E24E7254A4A9C00413BEC /* invoice.json */; };
+		54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B53A4C2548DEB000DDC282 /* Movimentacao.swift */; };
+		54B53A512548E12F00DDC282 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B53A502548E12E00DDC282 /* despesas.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		54165E242548C55500FB4931 /* TabBarCartoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarCartoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54165E272548C55500FB4931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54165E292548C55500FB4931 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		54165E2B2548C55500FB4931 /* CrediCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrediCardVC.swift; sourceTree = "<group>"; };
+		54165E2E2548C55500FB4931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54165E312548C55500FB4931 /* TabBarCartoes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TabBarCartoes.xcdatamodel; sourceTree = "<group>"; };
+		54165E332548C55900FB4931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54165E362548C55900FB4931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54165E382548C55900FB4931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54165E402548CFEE00FB4931 /* AccountBalanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceVC.swift; sourceTree = "<group>"; };
+		54165E492548D87D00FB4931 /* ExtratoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoCell.swift; sourceTree = "<group>"; };
+		54165E4A2548D87D00FB4931 /* ExtratoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtratoCell.xib; sourceTree = "<group>"; };
+		542E24C62549BD7300413BEC /* CreditCardContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardContainerCell.swift; sourceTree = "<group>"; };
+		542E24C72549BD7300413BEC /* CreditCardContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardContainerCell.xib; sourceTree = "<group>"; };
+		542E24CF2549D8AC00413BEC /* CreditCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		542E24D02549D8AC00413BEC /* CreditCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		542E24D42549DFEA00413BEC /* cartoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cartoes.json; sourceTree = "<group>"; };
+		542E24D72549E00500413BEC /* Cartoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartoes.swift; sourceTree = "<group>"; };
+		542E24DB254A3B9A00413BEC /* InvoiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceVC.swift; sourceTree = "<group>"; };
+		542E24DF254A475400413BEC /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		542E24E7254A4A9C00413BEC /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invoice.json; path = ../../../../../Downloads/invoice.json; sourceTree = "<group>"; };
+		54B53A4C2548DEB000DDC282 /* Movimentacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimentacao.swift; sourceTree = "<group>"; };
+		54B53A502548E12E00DDC282 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = despesas.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54165E212548C55500FB4931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54165E1B2548C55500FB4931 = {
+			isa = PBXGroup;
+			children = (
+				54165E262548C55500FB4931 /* TabBarCartoes */,
+				54165E252548C55500FB4931 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54165E252548C55500FB4931 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54165E242548C55500FB4931 /* TabBarCartoes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54165E262548C55500FB4931 /* TabBarCartoes */ = {
+			isa = PBXGroup;
+			children = (
+				54903C2B2549B10D00F22465 /* Views */,
+				54B53A4B2548DE9400DDC282 /* Model */,
+				54165E272548C55500FB4931 /* AppDelegate.swift */,
+				54165E292548C55500FB4931 /* SceneDelegate.swift */,
+				54165E2D2548C55500FB4931 /* Main.storyboard */,
+				54165E352548C55900FB4931 /* LaunchScreen.storyboard */,
+				54165E332548C55900FB4931 /* Assets.xcassets */,
+				54165E382548C55900FB4931 /* Info.plist */,
+				54165E302548C55500FB4931 /* TabBarCartoes.xcdatamodeld */,
+			);
+			path = TabBarCartoes;
+			sourceTree = "<group>";
+		};
+		542E24DA254A3B4000413BEC /* Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				542E24DB254A3B9A00413BEC /* InvoiceVC.swift */,
+			);
+			path = Invoice;
+			sourceTree = "<group>";
+		};
+		54903C2B2549B10D00F22465 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				542E24DA254A3B4000413BEC /* Invoice */,
+				54903C2F2549B3C700F22465 /* CreditCard */,
+				54903C2C2549B14D00F22465 /* AccountBalance */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54903C2C2549B14D00F22465 /* AccountBalance */ = {
+			isa = PBXGroup;
+			children = (
+				54165E492548D87D00FB4931 /* ExtratoCell.swift */,
+				54165E4A2548D87D00FB4931 /* ExtratoCell.xib */,
+				54165E402548CFEE00FB4931 /* AccountBalanceVC.swift */,
+			);
+			path = AccountBalance;
+			sourceTree = "<group>";
+		};
+		54903C2F2549B3C700F22465 /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				54165E2B2548C55500FB4931 /* CrediCardVC.swift */,
+				542E24C62549BD7300413BEC /* CreditCardContainerCell.swift */,
+				542E24C72549BD7300413BEC /* CreditCardContainerCell.xib */,
+				542E24CF2549D8AC00413BEC /* CreditCardCollectionViewCell.swift */,
+				542E24D02549D8AC00413BEC /* CreditCardCollectionViewCell.xib */,
+			);
+			path = CreditCard;
+			sourceTree = "<group>";
+		};
+		54B53A4B2548DE9400DDC282 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54B53A4C2548DEB000DDC282 /* Movimentacao.swift */,
+				542E24DF254A475400413BEC /* Invoice.swift */,
+				542E24D72549E00500413BEC /* Cartoes.swift */,
+				542E24E7254A4A9C00413BEC /* invoice.json */,
+				542E24D42549DFEA00413BEC /* cartoes.json */,
+				54B53A502548E12E00DDC282 /* despesas.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54165E232548C55500FB4931 /* TabBarCartoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54165E3B2548C55900FB4931 /* Build configuration list for PBXNativeTarget "TabBarCartoes" */;
+			buildPhases = (
+				54165E202548C55500FB4931 /* Sources */,
+				54165E212548C55500FB4931 /* Frameworks */,
+				54165E222548C55500FB4931 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabBarCartoes;
+			productName = TabBarCartoes;
+			productReference = 54165E242548C55500FB4931 /* TabBarCartoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54165E1C2548C55500FB4931 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					54165E232548C55500FB4931 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 54165E1F2548C55500FB4931 /* Build configuration list for PBXProject "TabBarCartoes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54165E1B2548C55500FB4931;
+			productRefGroup = 54165E252548C55500FB4931 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54165E232548C55500FB4931 /* TabBarCartoes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54165E222548C55500FB4931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542E24E8254A4A9C00413BEC /* invoice.json in Resources */,
+				54165E372548C55900FB4931 /* LaunchScreen.storyboard in Resources */,
+				54165E342548C55900FB4931 /* Assets.xcassets in Resources */,
+				542E24C92549BD7300413BEC /* CreditCardContainerCell.xib in Resources */,
+				54165E2F2548C55500FB4931 /* Main.storyboard in Resources */,
+				54165E4C2548D87D00FB4931 /* ExtratoCell.xib in Resources */,
+				542E24D52549DFEA00413BEC /* cartoes.json in Resources */,
+				542E24D22549D8AC00413BEC /* CreditCardCollectionViewCell.xib in Resources */,
+				54B53A512548E12F00DDC282 /* despesas.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54165E202548C55500FB4931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542E24DC254A3B9A00413BEC /* InvoiceVC.swift in Sources */,
+				542E24E0254A475400413BEC /* Invoice.swift in Sources */,
+				542E24C82549BD7300413BEC /* CreditCardContainerCell.swift in Sources */,
+				54165E2C2548C55500FB4931 /* CrediCardVC.swift in Sources */,
+				54165E4B2548D87D00FB4931 /* ExtratoCell.swift in Sources */,
+				54165E412548CFEE00FB4931 /* AccountBalanceVC.swift in Sources */,
+				54165E282548C55500FB4931 /* AppDelegate.swift in Sources */,
+				54165E2A2548C55500FB4931 /* SceneDelegate.swift in Sources */,
+				54165E322548C55500FB4931 /* TabBarCartoes.xcdatamodeld in Sources */,
+				542E24D82549E00500413BEC /* Cartoes.swift in Sources */,
+				54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */,
+				542E24D12549D8AC00413BEC /* CreditCardCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54165E2D2548C55500FB4931 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54165E2E2548C55500FB4931 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54165E352548C55900FB4931 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54165E362548C55900FB4931 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54165E392548C55900FB4931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54165E3A2548C55900FB4931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54165E3C2548C55900FB4931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AS994HB957;
+				INFOPLIST_FILE = TabBarCartoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.catiasouza.TabBarCartoes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54165E3D2548C55900FB4931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AS994HB957;
+				INFOPLIST_FILE = TabBarCartoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.catiasouza.TabBarCartoes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54165E1F2548C55500FB4931 /* Build configuration list for PBXProject "TabBarCartoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54165E392548C55900FB4931 /* Debug */,
+				54165E3A2548C55900FB4931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54165E3B2548C55900FB4931 /* Build configuration list for PBXNativeTarget "TabBarCartoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54165E3C2548C55900FB4931 /* Debug */,
+				54165E3D2548C55900FB4931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54165E302548C55500FB4931 /* TabBarCartoes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54165E312548C55500FB4931 /* TabBarCartoes.xcdatamodel */,
+			);
+			currentVersion = 54165E312548C55500FB4931 /* TabBarCartoes.xcdatamodel */;
+			path = TabBarCartoes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54165E1C2548C55500FB4931 /* Project object */;
+}

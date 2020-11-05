@@ -107,6 +107,7 @@
 		542E24DA254A3B4000413BEC /* Invoice */ = {
 			isa = PBXGroup;
 			children = (
+				542E26AA25538D9200413BEC /* lista.json */,
 				542E24DB254A3B9A00413BEC /* InvoiceVC.swift */,
 			);
 			path = Invoice;
@@ -161,7 +162,6 @@
 				542E24D42549DFEA00413BEC /* cartoes.json */,
 				54B53A502548E12E00DDC282 /* despesas.json */,
 				542E269D255383AB00413BEC /* invoice.json */,
-				542E26AA25538D9200413BEC /* lista.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";

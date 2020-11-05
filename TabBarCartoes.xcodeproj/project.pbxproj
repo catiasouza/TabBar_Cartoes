@@ -27,7 +27,7 @@
 		542E24E0254A475400413BEC /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E24DF254A475400413BEC /* Invoice.swift */; };
 		542E269E255383AB00413BEC /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 542E269D255383AB00413BEC /* invoice.json */; };
 		542E26A62553873D00413BEC /* AccountBalanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E26A52553873D00413BEC /* AccountBalanceController.swift */; };
-		542E26B9255394A900413BEC /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 542E26B8255394A900413BEC /* invoice.json */; };
+		542E26BF255395C100413BEC /* invoices.json in Resources */ = {isa = PBXBuildFile; fileRef = 542E26BE255395C100413BEC /* invoices.json */; };
 		54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B53A4C2548DEB000DDC282 /* Movimentacao.swift */; };
 		54B53A512548E12F00DDC282 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B53A502548E12E00DDC282 /* despesas.json */; };
 /* End PBXBuildFile section */
@@ -55,7 +55,7 @@
 		542E24DF254A475400413BEC /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
 		542E269D255383AB00413BEC /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invoice.json; path = "../../../../../Downloads/TabBar_Cartoes-master 7/TabBarCartoes/Model/invoice.json"; sourceTree = "<group>"; };
 		542E26A52553873D00413BEC /* AccountBalanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceController.swift; sourceTree = "<group>"; };
-		542E26B8255394A900413BEC /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invoice.json; path = ../../../../../Downloads/invoice.json; sourceTree = "<group>"; };
+		542E26BE255395C100413BEC /* invoices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invoices.json; sourceTree = "<group>"; };
 		54B53A4C2548DEB000DDC282 /* Movimentacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimentacao.swift; sourceTree = "<group>"; };
 		54B53A502548E12E00DDC282 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = despesas.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,7 +155,7 @@
 		54B53A4B2548DE9400DDC282 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				542E26B8255394A900413BEC /* invoice.json */,
+				542E26BE255395C100413BEC /* invoices.json */,
 				54B53A4C2548DEB000DDC282 /* Movimentacao.swift */,
 				542E24DF254A475400413BEC /* Invoice.swift */,
 				542E24D72549E00500413BEC /* Cartoes.swift */,
@@ -228,11 +228,11 @@
 				54165E342548C55900FB4931 /* Assets.xcassets in Resources */,
 				542E24C92549BD7300413BEC /* CreditCardContainerCell.xib in Resources */,
 				54165E2F2548C55500FB4931 /* Main.storyboard in Resources */,
+				542E26BF255395C100413BEC /* invoices.json in Resources */,
 				54165E4C2548D87D00FB4931 /* ExtratoCell.xib in Resources */,
 				542E24D52549DFEA00413BEC /* cartoes.json in Resources */,
 				542E24D22549D8AC00413BEC /* CreditCardCollectionViewCell.xib in Resources */,
 				54B53A512548E12F00DDC282 /* despesas.json in Resources */,
-				542E26B9255394A900413BEC /* invoice.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

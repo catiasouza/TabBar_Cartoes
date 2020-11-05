@@ -52,6 +52,7 @@ extension CreditCardContainerCell: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("\(cartoes?.cartoes[indexPath.row].id)")
         self.delegate?.tappedCreditCard(withID: cartoes?.cartoes[indexPath.row].id ?? "")
     }
     

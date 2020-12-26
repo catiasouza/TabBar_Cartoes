@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddButtonCollectionCell" id="KaR-a8-OQe" customClass="AddButtonCollectionCell" customModule="TabBarCartoes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dn-it-cwU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXe-cF-8iR">
+                                <rect key="frame" x="0.0" y="26" width="320" height="2"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="6hZ-Ue-rFx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Taz-Lo-kse">
+                                <rect key="frame" x="238" y="0.0" width="82" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OUv-FQ-RXy">
+                                        <rect key="frame" x="12" y="71" width="58" height="58.5"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="58" id="P1u-TB-jcu"/>
+                                            <constraint firstAttribute="height" constant="62.5" id="pLU-aO-lBZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07z-d0-hLm">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="200"/>
+                                        <connections>
+                                            <action selector="tappedbutton:" destination="KaR-a8-OQe" eventType="touchUpInside" id="De2-4S-EcZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstItem="07z-d0-hLm" firstAttribute="top" secondItem="Taz-Lo-kse" secondAttribute="top" id="aGK-ZW-mM5"/>
+                                    <constraint firstItem="OUv-FQ-RXy" firstAttribute="centerX" secondItem="Taz-Lo-kse" secondAttribute="centerX" id="aHC-LY-duZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="07z-d0-hLm" secondAttribute="bottom" id="abr-ZO-B2h"/>
+                                    <constraint firstAttribute="trailing" secondItem="OUv-FQ-RXy" secondAttribute="trailing" constant="12" id="ayG-8w-ecC"/>
+                                    <constraint firstItem="OUv-FQ-RXy" firstAttribute="leading" secondItem="Taz-Lo-kse" secondAttribute="leading" constant="12" id="dge-Dr-Xtl"/>
+                                    <constraint firstItem="07z-d0-hLm" firstAttribute="leading" secondItem="Taz-Lo-kse" secondAttribute="leading" id="edb-1k-jVa"/>
+                                    <constraint firstAttribute="trailing" secondItem="07z-d0-hLm" secondAttribute="trailing" id="seX-PQ-gWo"/>
+                                    <constraint firstItem="OUv-FQ-RXy" firstAttribute="top" secondItem="Taz-Lo-kse" secondAttribute="top" constant="69" id="v3H-MC-C4D"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tGo-dQ-QLI">
+                                <rect key="frame" x="46" y="44.5" width="170" height="116.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="7uK-cM-HIB"/>
+                                    <constraint firstAttribute="height" constant="120" id="H0i-bI-VeR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="4tA-Pq-CCd"/>
+                            <constraint firstAttribute="trailing" secondItem="LXe-cF-8iR" secondAttribute="trailing" id="65I-mi-nxt"/>
+                            <constraint firstAttribute="bottom" secondItem="Taz-Lo-kse" secondAttribute="bottom" id="7iY-IZ-If4"/>
+                            <constraint firstItem="tGo-dQ-QLI" firstAttribute="leading" secondItem="2dn-it-cwU" secondAttribute="leading" constant="46" id="DyV-0E-Dgd"/>
+                            <constraint firstItem="Taz-Lo-kse" firstAttribute="trailing" secondItem="LXe-cF-8iR" secondAttribute="trailing" id="GWs-YZ-XDR"/>
+                            <constraint firstItem="tGo-dQ-QLI" firstAttribute="top" secondItem="LXe-cF-8iR" secondAttribute="bottom" constant="15" id="OYg-pd-U9B"/>
+                            <constraint firstItem="Taz-Lo-kse" firstAttribute="top" secondItem="2dn-it-cwU" secondAttribute="top" id="QYI-vy-XGv"/>
+                            <constraint firstItem="LXe-cF-8iR" firstAttribute="leading" secondItem="2dn-it-cwU" secondAttribute="leading" id="SIg-Zp-Bw5"/>
+                            <constraint firstItem="LXe-cF-8iR" firstAttribute="top" secondItem="2dn-it-cwU" secondAttribute="top" constant="26" id="hdU-TI-zpe"/>
+                            <constraint firstAttribute="width" constant="320" id="i5M-dJ-7nl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="y0P-WU-mP9"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2dn-it-cwU" secondAttribute="bottom" id="PR4-MS-UEu"/>
+                <constraint firstItem="2dn-it-cwU" firstAttribute="leading" secondItem="KaR-a8-OQe" secondAttribute="leading" id="Qe2-zy-0Hk"/>
+                <constraint firstItem="2dn-it-cwU" firstAttribute="top" secondItem="KaR-a8-OQe" secondAttribute="top" symbolic="YES" id="VPB-0g-TZP"/>
+                <constraint firstAttribute="trailing" secondItem="2dn-it-cwU" secondAttribute="trailing" id="c9t-eB-mOP"/>
+            </constraints>
+            <size key="customSize" width="320" height="174"/>
+            <connections>
+                <outlet property="backgroundViewButton" destination="Taz-Lo-kse" id="rqh-tj-aQZ"/>
+                <outlet property="contanierView" destination="2dn-it-cwU" id="QBJ-89-kv7"/>
+                <outlet property="imageButton" destination="OUv-FQ-RXy" id="Kat-QF-m2J"/>
+                <outlet property="imageCenter" destination="tGo-dQ-QLI" id="QXz-Wn-jI5"/>
+                <outlet property="lineView" destination="LXe-cF-8iR" id="dMJ-NI-isT"/>
+            </connections>
+            <point key="canvasLocation" x="165.21739130434784" y="84.375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

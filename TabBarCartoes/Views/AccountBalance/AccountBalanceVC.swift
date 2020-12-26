@@ -19,15 +19,21 @@ class AccountBalanceVC: UIViewController {
         
         self.timeLine.register(UINib(nibName: "ExtratoCell", bundle: nil), forCellReuseIdentifier: "ExtratoCell")
         
-        self.controller.loadLancamentos()
+        self.controller.loadLancamentos{ (result, error) in
+            if result{
+                print("result =====>\(result)")
+                self.timeLine.delegate = self
+                self.timeLine.dataSource = self
+                self.timeLine.separatorStyle = .none
+            }else{
+                print(" ==============> deu erro\(error)")
+            }
+            
+            
+        }
         
-        self.timeLine.delegate = self
-        self.timeLine.dataSource = self
-        self.timeLine.separatorStyle = .none
     }
-    
 }
-
 extension AccountBalanceVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

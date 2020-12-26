@@ -1,0 +1,6 @@
+framework module Pods_TabBarCartoes {
+  umbrella header "Pods-TabBarCartoes-umbrella.h"
+
+  export *
+  module * { export * }
+}

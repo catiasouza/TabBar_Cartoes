@@ -42,6 +42,7 @@
                     <connections>
                         <outlet property="tableview" destination="Dtr-SX-8dp" id="0RI-dN-Idk"/>
                         <segue destination="4b1-5t-wm2" kind="show" identifier="InvoiceVC" id="Y8F-rf-Dja"/>
+                        <segue destination="2EA-I4-0WD" kind="presentation" identifier="AddCrediCardVC" id="Hen-xF-Uoc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -78,6 +79,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqn-09-myi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3730" y="66"/>
+        </scene>
+        <!--AddCrediCard-->
+        <scene sceneID="hnk-JE-dBr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddCrediCard" id="2EA-I4-0WD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAI-HB-3KD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3462" y="-326"/>
         </scene>
         <!--Extrato-->
         <scene sceneID="TuE-aI-DVZ">

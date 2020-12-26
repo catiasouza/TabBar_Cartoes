@@ -43,32 +43,68 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3A9E71E6-0596-4220-B1C6-59A4E74C399B"
+            uuid = "63321841-7671-4F67-9A01-6DA76D9770AB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TabBarCartoes/Views/Invoice/InvoiceVC.swift"
+            filePath = "TabBarCartoes/Views/AccountBalance/AccountBalanceVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            uuid = "C1DC1D15-2F11-4764-ABC5-1B9707CBF122"
+            uuid = "739F5BF1-CC95-4E38-A34F-FBA7F358BF8A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TabBarCartoes/Views/CreditCard/CreditCardContainerCell.swift"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "7CCA997B-6EAD-4F34-BD75-CF47BA6EE4E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "BA4009CA-5BDA-4A57-B61E-A84635571876"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5ADDC162-B7E5-437F-8457-CBB18FAC92FD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TabBarCartoes/AddCrediCardVC/AddCrediCardVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "textFieldShouldReturn(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

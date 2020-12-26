@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AC1DF1753A668253EBA7DD4 /* Pods_TabBarCartoes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3962072364C259011AE3F8 /* Pods_TabBarCartoes.framework */; };
 		54165E282548C55500FB4931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E272548C55500FB4931 /* AppDelegate.swift */; };
 		54165E2A2548C55500FB4931 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E292548C55500FB4931 /* SceneDelegate.swift */; };
 		54165E2C2548C55500FB4931 /* CrediCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E2B2548C55500FB4931 /* CrediCardVC.swift */; };
@@ -17,6 +18,12 @@
 		54165E412548CFEE00FB4931 /* AccountBalanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E402548CFEE00FB4931 /* AccountBalanceVC.swift */; };
 		54165E4B2548D87D00FB4931 /* ExtratoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165E492548D87D00FB4931 /* ExtratoCell.swift */; };
 		54165E4C2548D87D00FB4931 /* ExtratoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54165E4A2548D87D00FB4931 /* ExtratoCell.xib */; };
+		541F15BC25605D3F0061385A /* CrediCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F15BB25605D3F0061385A /* CrediCardController.swift */; };
+		541F15BF256060F20061385A /* InvoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F15BE256060F10061385A /* InvoiceController.swift */; };
+		541F15C52560753F0061385A /* AddButtonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F15C32560753F0061385A /* AddButtonCollectionCell.swift */; };
+		541F15C62560753F0061385A /* AddButtonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541F15C42560753F0061385A /* AddButtonCollectionCell.xib */; };
+		541F15CB256144D00061385A /* AddCrediCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541F15CA256144D00061385A /* AddCrediCard.storyboard */; };
+		541F15CE256146560061385A /* AddCrediCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F15CD256146560061385A /* AddCrediCardVC.swift */; };
 		542E24C82549BD7300413BEC /* CreditCardContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E24C62549BD7300413BEC /* CreditCardContainerCell.swift */; };
 		542E24C92549BD7300413BEC /* CreditCardContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542E24C72549BD7300413BEC /* CreditCardContainerCell.xib */; };
 		542E24D12549D8AC00413BEC /* CreditCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E24CF2549D8AC00413BEC /* CreditCardCollectionViewCell.swift */; };
@@ -28,11 +35,15 @@
 		542E26A62553873D00413BEC /* AccountBalanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E26A52553873D00413BEC /* AccountBalanceController.swift */; };
 		542E26BF255395C100413BEC /* invoices.json in Resources */ = {isa = PBXBuildFile; fileRef = 542E26BE255395C100413BEC /* invoices.json */; };
 		542E26C72553974C00413BEC /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 542E26C62553974C00413BEC /* invoice.json */; };
+		54675B7E2597D64700693DB9 /* AddCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54675B7D2597D64700693DB9 /* AddCreditCardController.swift */; };
 		54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B53A4C2548DEB000DDC282 /* Movimentacao.swift */; };
 		54B53A512548E12F00DDC282 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B53A502548E12E00DDC282 /* despesas.json */; };
+		54E106CD256F2EDB0084A1E9 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E106CC256F2EDB0084A1E9 /* loading.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F3962072364C259011AE3F8 /* Pods_TabBarCartoes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabBarCartoes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		541570AE41F57805D61B458F /* Pods-TabBarCartoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarCartoes.release.xcconfig"; path = "Target Support Files/Pods-TabBarCartoes/Pods-TabBarCartoes.release.xcconfig"; sourceTree = "<group>"; };
 		54165E242548C55500FB4931 /* TabBarCartoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarCartoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54165E272548C55500FB4931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54165E292548C55500FB4931 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +56,12 @@
 		54165E402548CFEE00FB4931 /* AccountBalanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceVC.swift; sourceTree = "<group>"; };
 		54165E492548D87D00FB4931 /* ExtratoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoCell.swift; sourceTree = "<group>"; };
 		54165E4A2548D87D00FB4931 /* ExtratoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtratoCell.xib; sourceTree = "<group>"; };
+		541F15BB25605D3F0061385A /* CrediCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrediCardController.swift; sourceTree = "<group>"; };
+		541F15BE256060F10061385A /* InvoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceController.swift; sourceTree = "<group>"; };
+		541F15C32560753F0061385A /* AddButtonCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonCollectionCell.swift; sourceTree = "<group>"; };
+		541F15C42560753F0061385A /* AddButtonCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddButtonCollectionCell.xib; sourceTree = "<group>"; };
+		541F15CA256144D00061385A /* AddCrediCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCrediCard.storyboard; sourceTree = "<group>"; };
+		541F15CD256146560061385A /* AddCrediCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCrediCardVC.swift; sourceTree = "<group>"; };
 		542E24C62549BD7300413BEC /* CreditCardContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardContainerCell.swift; sourceTree = "<group>"; };
 		542E24C72549BD7300413BEC /* CreditCardContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardContainerCell.xib; sourceTree = "<group>"; };
 		542E24CF2549D8AC00413BEC /* CreditCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -56,8 +73,11 @@
 		542E26A52553873D00413BEC /* AccountBalanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceController.swift; sourceTree = "<group>"; };
 		542E26BE255395C100413BEC /* invoices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invoices.json; sourceTree = "<group>"; };
 		542E26C62553974C00413BEC /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invoice.json; path = ../../../../invoice.json; sourceTree = "<group>"; };
+		54675B7D2597D64700693DB9 /* AddCreditCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardController.swift; sourceTree = "<group>"; };
 		54B53A4C2548DEB000DDC282 /* Movimentacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimentacao.swift; sourceTree = "<group>"; };
 		54B53A502548E12E00DDC282 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = despesas.json; sourceTree = "<group>"; };
+		54E106CC256F2EDB0084A1E9 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		74F98A285D37DF1BEB1D64AC /* Pods-TabBarCartoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarCartoes.debug.xcconfig"; path = "Target Support Files/Pods-TabBarCartoes/Pods-TabBarCartoes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +85,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC1DF1753A668253EBA7DD4 /* Pods_TabBarCartoes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4210E7DABB80E8A76FBDCD5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F3962072364C259011AE3F8 /* Pods_TabBarCartoes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		54165E1B2548C55500FB4931 = {
 			isa = PBXGroup;
 			children = (
 				54165E262548C55500FB4931 /* TabBarCartoes */,
 				54165E252548C55500FB4931 /* Products */,
+				645F95CD3D89FC94D1733A4F /* Pods */,
+				4210E7DABB80E8A76FBDCD5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,7 +121,9 @@
 		54165E262548C55500FB4931 /* TabBarCartoes */ = {
 			isa = PBXGroup;
 			children = (
-				542E268325536EE000413BEC /* Controller */,
+				54675B51258FE7FC00693DB9 /* Controller */,
+				541F15D0256146870061385A /* AddCrediCardVC */,
+				541F15C22560743C0061385A /* CustomViews */,
 				54903C2B2549B10D00F22465 /* Views */,
 				54B53A4B2548DE9400DDC282 /* Model */,
 				54165E272548C55500FB4931 /* AppDelegate.swift */,
@@ -100,22 +133,42 @@
 				54165E332548C55900FB4931 /* Assets.xcassets */,
 				54165E382548C55900FB4931 /* Info.plist */,
 				54165E302548C55500FB4931 /* TabBarCartoes.xcdatamodeld */,
+				54E106CC256F2EDB0084A1E9 /* loading.json */,
 			);
 			path = TabBarCartoes;
+			sourceTree = "<group>";
+		};
+		541F15C22560743C0061385A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				541F15C32560753F0061385A /* AddButtonCollectionCell.swift */,
+				541F15C42560753F0061385A /* AddButtonCollectionCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		541F15D0256146870061385A /* AddCrediCardVC */ = {
+			isa = PBXGroup;
+			children = (
+				541F15CD256146560061385A /* AddCrediCardVC.swift */,
+				541F15CA256144D00061385A /* AddCrediCard.storyboard */,
+				54675B7D2597D64700693DB9 /* AddCreditCardController.swift */,
+			);
+			path = AddCrediCardVC;
 			sourceTree = "<group>";
 		};
 		542E24DA254A3B4000413BEC /* Invoice */ = {
 			isa = PBXGroup;
 			children = (
 				542E24DB254A3B9A00413BEC /* InvoiceVC.swift */,
+				541F15BE256060F10061385A /* InvoiceController.swift */,
 			);
 			path = Invoice;
 			sourceTree = "<group>";
 		};
-		542E268325536EE000413BEC /* Controller */ = {
+		54675B51258FE7FC00693DB9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				542E26A52553873D00413BEC /* AccountBalanceController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -123,8 +176,8 @@
 		54903C2B2549B10D00F22465 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				542E24DA254A3B4000413BEC /* Invoice */,
 				54903C2F2549B3C700F22465 /* CreditCard */,
+				542E24DA254A3B4000413BEC /* Invoice */,
 				54903C2C2549B14D00F22465 /* AccountBalance */,
 			);
 			path = Views;
@@ -136,6 +189,7 @@
 				54165E492548D87D00FB4931 /* ExtratoCell.swift */,
 				54165E4A2548D87D00FB4931 /* ExtratoCell.xib */,
 				54165E402548CFEE00FB4931 /* AccountBalanceVC.swift */,
+				542E26A52553873D00413BEC /* AccountBalanceController.swift */,
 			);
 			path = AccountBalance;
 			sourceTree = "<group>";
@@ -143,6 +197,7 @@
 		54903C2F2549B3C700F22465 /* CreditCard */ = {
 			isa = PBXGroup;
 			children = (
+				541F15BB25605D3F0061385A /* CrediCardController.swift */,
 				54165E2B2548C55500FB4931 /* CrediCardVC.swift */,
 				542E24C62549BD7300413BEC /* CreditCardContainerCell.swift */,
 				542E24C72549BD7300413BEC /* CreditCardContainerCell.xib */,
@@ -166,6 +221,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		645F95CD3D89FC94D1733A4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74F98A285D37DF1BEB1D64AC /* Pods-TabBarCartoes.debug.xcconfig */,
+				541570AE41F57805D61B458F /* Pods-TabBarCartoes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54165E3B2548C55900FB4931 /* Build configuration list for PBXNativeTarget "TabBarCartoes" */;
 			buildPhases = (
+				40A12C796EB4A4993B7F3E83 /* [CP] Check Pods Manifest.lock */,
 				54165E202548C55500FB4931 /* Sources */,
 				54165E212548C55500FB4931 /* Frameworks */,
 				54165E222548C55500FB4931 /* Resources */,
+				F1DFD3C5293CB128BF2334D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,9 +293,12 @@
 				54165E342548C55900FB4931 /* Assets.xcassets in Resources */,
 				542E24C92549BD7300413BEC /* CreditCardContainerCell.xib in Resources */,
 				54165E2F2548C55500FB4931 /* Main.storyboard in Resources */,
+				541F15C62560753F0061385A /* AddButtonCollectionCell.xib in Resources */,
 				542E26BF255395C100413BEC /* invoices.json in Resources */,
 				54165E4C2548D87D00FB4931 /* ExtratoCell.xib in Resources */,
 				542E24D52549DFEA00413BEC /* cartoes.json in Resources */,
+				54E106CD256F2EDB0084A1E9 /* loading.json in Resources */,
+				541F15CB256144D00061385A /* AddCrediCard.storyboard in Resources */,
 				542E24D22549D8AC00413BEC /* CreditCardCollectionViewCell.xib in Resources */,
 				54B53A512548E12F00DDC282 /* despesas.json in Resources */,
 				542E26C72553974C00413BEC /* invoice.json in Resources */,
@@ -237,6 +306,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40A12C796EB4A4993B7F3E83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TabBarCartoes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1DFD3C5293CB128BF2334D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabBarCartoes/Pods-TabBarCartoes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabBarCartoes/Pods-TabBarCartoes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TabBarCartoes/Pods-TabBarCartoes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54165E202548C55500FB4931 /* Sources */ = {
@@ -250,11 +361,16 @@
 				54165E2C2548C55500FB4931 /* CrediCardVC.swift in Sources */,
 				54165E4B2548D87D00FB4931 /* ExtratoCell.swift in Sources */,
 				54165E412548CFEE00FB4931 /* AccountBalanceVC.swift in Sources */,
+				541F15BC25605D3F0061385A /* CrediCardController.swift in Sources */,
 				54165E282548C55500FB4931 /* AppDelegate.swift in Sources */,
+				541F15C52560753F0061385A /* AddButtonCollectionCell.swift in Sources */,
 				54165E2A2548C55500FB4931 /* SceneDelegate.swift in Sources */,
+				541F15BF256060F20061385A /* InvoiceController.swift in Sources */,
 				54165E322548C55500FB4931 /* TabBarCartoes.xcdatamodeld in Sources */,
+				541F15CE256146560061385A /* AddCrediCardVC.swift in Sources */,
 				542E24D82549E00500413BEC /* Cartoes.swift in Sources */,
 				54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */,
+				54675B7E2597D64700693DB9 /* AddCreditCardController.swift in Sources */,
 				542E24D12549D8AC00413BEC /* CreditCardCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +515,7 @@
 		};
 		54165E3C2548C55900FB4931 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F98A285D37DF1BEB1D64AC /* Pods-TabBarCartoes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -409,6 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.catiasouza.TabBarCartoes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -418,6 +536,7 @@
 		};
 		54165E3D2548C55900FB4931 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 541570AE41F57805D61B458F /* Pods-TabBarCartoes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,6 +547,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.catiasouza.TabBarCartoes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

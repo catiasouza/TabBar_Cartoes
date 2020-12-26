@@ -7,68 +7,71 @@
 
 import UIKit
 
-class CrediCardVC: UIViewController {
 
+class CrediCardVC: UIViewController {
+    
     @IBOutlet weak var tableview: UITableView!
-    private var cartoes: Cartoes?
+    var controller: CrediCardController = CrediCardController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableview.register(UINib(nibName: "CreditCardContainerCell", bundle: nil), forCellReuseIdentifier: "CreditCardContainerCell")
-        self.cartoes = self.loadCrediCard()
         
-        if self.cartoes != nil {
-            self.tableview.delegate = self
-            self.tableview.dataSource = self
-        }
-       print("FirstVC----viewDidLoad")
-        self.tableview.tableFooterView = UIView()
-    }
-
-    @IBAction func tappedPerfilItem(_ sender: UIBarButtonItem) {
-        print("***** perfil item button ****")
-    }
-    
-    private func loadCrediCard() -> Cartoes?{
-        
-        if let path = Bundle.main.path(forResource: "cartoes", ofType: "json"){
-            
-            do{
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                
-                let cartoes = try JSONDecoder().decode(Cartoes.self, from: data)
-                
-                print("====>> Movimentacao \(cartoes)")
-                return cartoes
-            }catch{
-                print("=== >>>> Deu ruim no parse")
-                return nil
+        self.controller.loadCrediCard { (result, error) in
+            if result {
+                self.tableview.delegate = self
+                self.tableview.dataSource = self
+                print("FirstVC----viewDidLoad")
+                self.tableview.tableFooterView = UIView()
+            }else {
+                print("deu error:\(error)")
             }
         }
-        return nil
+    }
+    
+    @IBAction func tappedPerfilItem(_ sender: UIBarButtonItem) {
+        print("***** perfil item button ****")
     }
 }
 
 extension CrediCardVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.controller.numberOfRows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: CreditCardContainerCell? = tableview.dequeueReusableCell(withIdentifier: "CreditCardContainerCell", for: indexPath) as? CreditCardContainerCell
-        cell?.setup(value: self.cartoes, delegate: self)
+        cell?.setup(value: self.controller.loadCartoes, delegate: self, isReload: self.controller.reloadCreditCards)
         
         return cell ?? UITableViewCell()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc: InvoiceVC? = segue.destination as? InvoiceVC
-        vc?.carId = sender as? String
+        
+        if segue.identifier == "InvoiceVC"{
+            let vc: InvoiceVC? = segue.destination as? InvoiceVC
+            vc?.setup(cardID: sender as? String)
+        }else if segue.identifier == "AddCrediCardVC" {
+            let vc : AddCrediCardVC? = segue.destination as? AddCrediCardVC
+            vc?.delegate = self
+        }
     }
+}
+extension CrediCardVC: AddCrediCardVCDelegate{
     
+    func success(value: CartoesElement?) {
+        print(value?.nome)
+        self.controller.appendCreditCard(value: value)
+        self.tableview.reloadData()
+    }
 }
 extension CrediCardVC : CreditCardContainerCellDelegate{
+    
+    func tappedAddCrediCardbuttom() {
+        self.performSegue(withIdentifier: "AddCrediCardVC", sender: nil)
+    }
+    
     func tappedCreditCard(withID: String) {
         print("credi===> \(withID)")
         self.performSegue(withIdentifier: "InvoiceVC", sender: withID)

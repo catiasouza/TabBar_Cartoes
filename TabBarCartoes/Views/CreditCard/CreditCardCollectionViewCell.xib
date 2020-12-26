@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDa-t3-GjB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo-master" translatesAutoresizingMaskIntoConstraints="NO" id="R8A-BA-HY1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo-visa" translatesAutoresizingMaskIntoConstraints="NO" id="R8A-BA-HY1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Yv3-3t-cay"/>
@@ -108,7 +108,7 @@
     </objects>
     <resources>
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
-        <image name="fundo-master" width="700" height="490"/>
+        <image name="fundo-visa" width="612" height="344"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

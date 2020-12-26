@@ -5,7 +5,7 @@
 //  Created by Cátia Souza on 04/11/20.
 //
 import Foundation
-class AccountBalanceController{
+class AccountBalanceController {
     
     private var arrayLancamentos:[LancamentoElements] = []
     private var currentLancamentoElement: LancamentoElements?
@@ -14,7 +14,7 @@ class AccountBalanceController{
         self.currentLancamentoElement = arrayLancamentos[index]
     }
     
-    func loadLancamentos() {
+    func loadLancamentos(completionHandler: (_ result: Bool, _ Error: Error?) -> Void) {
         
         if let path = Bundle.main.path(forResource: "despesas", ofType: "json"){
             
@@ -25,7 +25,10 @@ class AccountBalanceController{
                 
                 print("====>> Movimentacao \(movimentacao)")
                 self.arrayLancamentos =      movimentacao.lancamentos
+                completionHandler(true, nil)
+                
             }catch{
+                completionHandler(false, error)
                 print("=== >>>> Deu ruim no parse")
             }
         }

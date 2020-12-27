@@ -89,13 +89,21 @@
                                             <action selector="tappedSaveButton:" destination="zIB-Ly-c2a" eventType="touchUpInside" id="o5q-MN-epM"/>
                                         </connections>
                                     </button>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Tw-T3-223">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="599"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="LDJ-iL-EzS" secondAttribute="trailing" constant="8" id="6ec-Hu-Pne"/>
                                     <constraint firstItem="LDJ-iL-EzS" firstAttribute="leading" secondItem="h7f-gq-vaJ" secondAttribute="leading" constant="8" id="Cgj-jI-MgQ"/>
                                     <constraint firstItem="LDJ-iL-EzS" firstAttribute="top" secondItem="h7f-gq-vaJ" secondAttribute="top" constant="10" id="GAF-Pu-aj5"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Tw-T3-223" secondAttribute="trailing" id="U7f-HL-5tT"/>
+                                    <constraint firstItem="8Tw-T3-223" firstAttribute="leading" secondItem="h7f-gq-vaJ" secondAttribute="leading" id="bBw-R4-Kzb"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Tw-T3-223" secondAttribute="bottom" id="dpe-Mw-FT1"/>
                                     <constraint firstItem="wpY-UD-ImE" firstAttribute="leading" secondItem="h7f-gq-vaJ" secondAttribute="leading" constant="8" id="gUw-Mg-V4c"/>
+                                    <constraint firstItem="8Tw-T3-223" firstAttribute="top" secondItem="h7f-gq-vaJ" secondAttribute="top" id="hRb-62-bLz"/>
                                     <constraint firstItem="wpY-UD-ImE" firstAttribute="top" secondItem="LDJ-iL-EzS" secondAttribute="bottom" constant="10" id="j6e-0w-nX2"/>
                                     <constraint firstAttribute="trailing" secondItem="wpY-UD-ImE" secondAttribute="trailing" constant="8" id="xTb-EG-8yg"/>
                                 </constraints>

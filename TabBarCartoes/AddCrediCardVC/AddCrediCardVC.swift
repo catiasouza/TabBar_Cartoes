@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 enum DateEnum: Int {
     case month = 0
@@ -19,8 +20,12 @@ class AddCrediCardVC: UIViewController {
  
     var mes: String?
     var ano: String?
+    
+    var loadingView : LoadingView? = UINib(nibName: "LoadingView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? LoadingView
+    
     weak var delegate: AddCrediCardVCDelegate?
     
+   
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var numberCardLabel: UITextField!
     @IBOutlet weak var dateLabel: UITextField!
@@ -45,7 +50,14 @@ class AddCrediCardVC: UIViewController {
         configDatepicker()
         loadYears()
         
+        self.loadingView?.frame = self.view.frame
+        self.view.addSubview(self.loadingView ?? UIView())
+        self.loadingView?.showLoading()
+        
+        
     }
+    
+    
     private func loadYears(){
         let currentData = Date()
         let calendar = Calendar.current

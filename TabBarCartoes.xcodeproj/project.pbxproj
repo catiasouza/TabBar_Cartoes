@@ -35,10 +35,12 @@
 		542E26A62553873D00413BEC /* AccountBalanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E26A52553873D00413BEC /* AccountBalanceController.swift */; };
 		542E26BF255395C100413BEC /* invoices.json in Resources */ = {isa = PBXBuildFile; fileRef = 542E26BE255395C100413BEC /* invoices.json */; };
 		542E26C72553974C00413BEC /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 542E26C62553974C00413BEC /* invoice.json */; };
+		54543CE42598A82E00016E91 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 54543CE32598A82D00016E91 /* loading.json */; };
+		54543CE82598AE7800016E91 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54543CE72598AE7800016E91 /* LoadingView.swift */; };
+		54543CED2598AFC300016E91 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54543CEC2598AFC300016E91 /* LoadingView.xib */; };
 		54675B7E2597D64700693DB9 /* AddCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54675B7D2597D64700693DB9 /* AddCreditCardController.swift */; };
 		54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B53A4C2548DEB000DDC282 /* Movimentacao.swift */; };
 		54B53A512548E12F00DDC282 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B53A502548E12E00DDC282 /* despesas.json */; };
-		54E106CD256F2EDB0084A1E9 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E106CC256F2EDB0084A1E9 /* loading.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,10 +75,12 @@
 		542E26A52553873D00413BEC /* AccountBalanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceController.swift; sourceTree = "<group>"; };
 		542E26BE255395C100413BEC /* invoices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invoices.json; sourceTree = "<group>"; };
 		542E26C62553974C00413BEC /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invoice.json; path = ../../../../invoice.json; sourceTree = "<group>"; };
+		54543CE32598A82D00016E91 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		54543CE72598AE7800016E91 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		54543CEC2598AFC300016E91 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		54675B7D2597D64700693DB9 /* AddCreditCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardController.swift; sourceTree = "<group>"; };
 		54B53A4C2548DEB000DDC282 /* Movimentacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimentacao.swift; sourceTree = "<group>"; };
 		54B53A502548E12E00DDC282 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = despesas.json; sourceTree = "<group>"; };
-		54E106CC256F2EDB0084A1E9 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		74F98A285D37DF1BEB1D64AC /* Pods-TabBarCartoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarCartoes.debug.xcconfig"; path = "Target Support Files/Pods-TabBarCartoes/Pods-TabBarCartoes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +125,7 @@
 		54165E262548C55500FB4931 /* TabBarCartoes */ = {
 			isa = PBXGroup;
 			children = (
+				54543CEB2598AF8700016E91 /* Loading */,
 				54675B51258FE7FC00693DB9 /* Controller */,
 				541F15D0256146870061385A /* AddCrediCardVC */,
 				541F15C22560743C0061385A /* CustomViews */,
@@ -133,7 +138,6 @@
 				54165E332548C55900FB4931 /* Assets.xcassets */,
 				54165E382548C55900FB4931 /* Info.plist */,
 				54165E302548C55500FB4931 /* TabBarCartoes.xcdatamodeld */,
-				54E106CC256F2EDB0084A1E9 /* loading.json */,
 			);
 			path = TabBarCartoes;
 			sourceTree = "<group>";
@@ -164,6 +168,15 @@
 				541F15BE256060F10061385A /* InvoiceController.swift */,
 			);
 			path = Invoice;
+			sourceTree = "<group>";
+		};
+		54543CEB2598AF8700016E91 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				54543CE72598AE7800016E91 /* LoadingView.swift */,
+				54543CEC2598AFC300016E91 /* LoadingView.xib */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		54675B51258FE7FC00693DB9 /* Controller */ = {
@@ -211,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				542E26BE255395C100413BEC /* invoices.json */,
+				54543CE32598A82D00016E91 /* loading.json */,
 				54B53A4C2548DEB000DDC282 /* Movimentacao.swift */,
 				542E26C62553974C00413BEC /* invoice.json */,
 				542E24DF254A475400413BEC /* Invoice.swift */,
@@ -293,13 +307,14 @@
 				54165E342548C55900FB4931 /* Assets.xcassets in Resources */,
 				542E24C92549BD7300413BEC /* CreditCardContainerCell.xib in Resources */,
 				54165E2F2548C55500FB4931 /* Main.storyboard in Resources */,
+				54543CE42598A82E00016E91 /* loading.json in Resources */,
 				541F15C62560753F0061385A /* AddButtonCollectionCell.xib in Resources */,
 				542E26BF255395C100413BEC /* invoices.json in Resources */,
 				54165E4C2548D87D00FB4931 /* ExtratoCell.xib in Resources */,
 				542E24D52549DFEA00413BEC /* cartoes.json in Resources */,
-				54E106CD256F2EDB0084A1E9 /* loading.json in Resources */,
 				541F15CB256144D00061385A /* AddCrediCard.storyboard in Resources */,
 				542E24D22549D8AC00413BEC /* CreditCardCollectionViewCell.xib in Resources */,
+				54543CED2598AFC300016E91 /* LoadingView.xib in Resources */,
 				54B53A512548E12F00DDC282 /* despesas.json in Resources */,
 				542E26C72553974C00413BEC /* invoice.json in Resources */,
 			);
@@ -371,6 +386,7 @@
 				542E24D82549E00500413BEC /* Cartoes.swift in Sources */,
 				54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */,
 				54675B7E2597D64700693DB9 /* AddCreditCardController.swift in Sources */,
+				54543CE82598AE7800016E91 /* LoadingView.swift in Sources */,
 				542E24D12549D8AC00413BEC /* CreditCardCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,7 +20,7 @@ class CrediCardController {
                 self.cartoes = _success
                 completionHandler(true, nil)
             }else{
-                completionHandler(false, error)
+                completionHandler(false, "")
             }
         }
 //        if let path = Bundle.main.path(forResource: "cartoes", ofType: "json"){

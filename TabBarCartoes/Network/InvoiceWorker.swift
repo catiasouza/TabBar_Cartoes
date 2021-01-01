@@ -39,7 +39,7 @@ class InvoiceWorker: GenericWorker {
                             completion(cardListElement.first, nil)
                             
                         }else {
-                            completion(nil, "Deu rui card id")
+                            completion(nil, "")
                             print("Deu ruim =======")
                         }
                         

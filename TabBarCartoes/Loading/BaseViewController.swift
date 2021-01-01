@@ -16,6 +16,15 @@ class BaseViewController: UIViewController {
 
         
     }
+    
+    func showError(error: ErrorHandle?){
+        let alert = UIAlertController(title: error?.title, message: error?.errorDescription, preferredStyle: .alert)
+        let button = UIAlertAction(title: "OK", style: .default) { (action) in
+            self.dismiss(animated: true, completion: nil)
+        }
+        alert.addAction(button)
+        self.present(alert, animated: true, completion: nil)
+    }
 
     func showLoading(){
         self.loadingView = UINib(nibName: "LoadingView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? LoadingView

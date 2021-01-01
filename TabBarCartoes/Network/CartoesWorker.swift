@@ -24,7 +24,7 @@ class CartoesWorker: GenericWorker {
                     let cartoes = try JSONDecoder().decode(Cartoes.self, from: data ?? Data())
                     completion(cartoes,nil)
                 }catch{
-                    completion(nil,"Deu ruim no cartoes")
+                    completion(nil,nil)
                 }
             }
             task.resume()

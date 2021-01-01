@@ -37,6 +37,7 @@ class InvoiceVC: BaseViewController {
             }else {
                 DispatchQueue.main.async {
                     print("Deu error \(error)")
+                    
                     self.hiddenLoading()
                 }
                 

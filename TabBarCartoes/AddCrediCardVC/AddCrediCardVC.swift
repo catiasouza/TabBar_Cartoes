@@ -16,12 +16,13 @@ protocol AddCrediCardVCDelegate: class {
     func success(value: CartoesElement?)
 }
 
-class AddCrediCardVC: UIViewController {
+class AddCrediCardVC: BaseViewController {
  
     var mes: String?
     var ano: String?
     
-    var loadingView : LoadingView? = UINib(nibName: "LoadingView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? LoadingView
+    //so usaria de nao tivesse a base view controller
+//    var loadingView : LoadingView? = UINib(nibName: "LoadingView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? LoadingView
     
     weak var delegate: AddCrediCardVCDelegate?
     
@@ -49,11 +50,11 @@ class AddCrediCardVC: UIViewController {
         configScreen()
         configDatepicker()
         loadYears()
-        
-        self.loadingView?.frame = self.view.frame
-        self.view.addSubview(self.loadingView ?? UIView())
-        self.loadingView?.showLoading()
-        
+        self.showLoading()
+//        self.loadingView?.frame = self.view.frame
+//        self.view.addSubview(self.loadingView ?? UIView())
+//        self.loadingView?.showLoading()
+//
         
     }
     

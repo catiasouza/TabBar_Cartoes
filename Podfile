@@ -7,4 +7,5 @@ target 'TabBarCartoes' do
 
   # Pods for TabBarCartoes
  pod 'lottie-ios', '~> 3.1'
+ pod 'Alamofire', '~> 5.4'
 end

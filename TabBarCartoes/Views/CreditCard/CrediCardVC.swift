@@ -8,7 +8,7 @@
 import UIKit
 
 
-class CrediCardVC: UIViewController {
+class CrediCardVC: BaseViewController {
     
     @IBOutlet weak var tableview: UITableView!
     var controller: CrediCardController = CrediCardController()
@@ -18,14 +18,24 @@ class CrediCardVC: UIViewController {
         
         self.tableview.register(UINib(nibName: "CreditCardContainerCell", bundle: nil), forCellReuseIdentifier: "CreditCardContainerCell")
         
+        self.showLoading()
         self.controller.loadCrediCard { (result, error) in
             if result {
-                self.tableview.delegate = self
-                self.tableview.dataSource = self
-                print("FirstVC----viewDidLoad")
-                self.tableview.tableFooterView = UIView()
+                DispatchQueue.main.async {
+                    self.tableview.delegate = self
+                    self.tableview.dataSource = self
+                    print("FirstVC----viewDidLoad")
+                    self.tableview.tableFooterView = UIView()
+                    self.tableview.reloadData()
+                    self.hiddenLoading()
+                }
+                
             }else {
-                print("deu error:\(error)")
+                DispatchQueue.main.async {
+                    self.hiddenLoading()
+                    print("deu error:\(error)")
+                }
+                
             }
         }
     }

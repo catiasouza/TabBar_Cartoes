@@ -11,23 +11,33 @@ class CrediCardController {
     private var cartoes: Cartoes?
     private var isReloadCollection: Bool = false
     
-    func loadCrediCard(completionHandler: (_ result: Bool, _ error: Error?) -> Void){
+    func loadCrediCard(completionHandler: @escaping(_ result: Bool, _ error: String?) -> Void){
         
-        if let path = Bundle.main.path(forResource: "cartoes", ofType: "json"){
+        CartoesWorker().getCartoes { (success, error) in
             
-            do{
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+            if let _success = success{
                 
-                let cartoes = try JSONDecoder().decode(Cartoes.self, from: data)
-                
-                print("====>> Movimentacao \(cartoes)")
-                self.cartoes = cartoes
+                self.cartoes = _success
                 completionHandler(true, nil)
-            }catch{
-                print("=== >>>> Deu ruim no parse")
+            }else{
                 completionHandler(false, error)
             }
         }
+//        if let path = Bundle.main.path(forResource: "cartoes", ofType: "json"){
+//
+//            do{
+//                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+//
+//                let cartoes = try JSONDecoder().decode(Cartoes.self, from: data)
+//
+//                print("====>> Movimentacao \(cartoes)")
+//                self.cartoes = cartoes
+//                completionHandler(true, nil)
+//            }catch{
+//                print("=== >>>> Deu ruim no parse")
+//                completionHandler(false, error)
+//            }
+//        }
     }
     var loadCartoes: Cartoes?{
         return self.cartoes

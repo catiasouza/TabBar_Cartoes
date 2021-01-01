@@ -9,7 +9,7 @@
 import UIKit
 
 
-class InvoiceVC: UIViewController {
+class InvoiceVC: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
    
@@ -23,14 +23,26 @@ class InvoiceVC: UIViewController {
         super.viewDidLoad()
         
         self.tableView.register(UINib(nibName: "ExtratoCell", bundle: nil), forCellReuseIdentifier: "ExtratoCell")
+        self.showLoading()
+        
         self.controller?.loadCardListElent(completionHandler: { (result, error) in
+            
             if result {
-                self.tableView.delegate = self
-                self.tableView.dataSource = self
+                DispatchQueue.main.async {
+                    self.tableView.delegate = self
+                    self.tableView.dataSource = self
+                    self.tableView.reloadData()
+                    self.hiddenLoading()
+                }
             }else {
-                print("Deu error \(error)")
+                DispatchQueue.main.async {
+                    print("Deu error \(error)")
+                    self.hiddenLoading()
+                }
+                
             }
         })
+        
     }
 }
 extension InvoiceVC: UITableViewDelegate, UITableViewDataSource {

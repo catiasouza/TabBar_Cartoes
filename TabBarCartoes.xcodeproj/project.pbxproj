@@ -38,6 +38,12 @@
 		54543CE42598A82E00016E91 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 54543CE32598A82D00016E91 /* loading.json */; };
 		54543CE82598AE7800016E91 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54543CE72598AE7800016E91 /* LoadingView.swift */; };
 		54543CED2598AFC300016E91 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54543CEC2598AFC300016E91 /* LoadingView.xib */; };
+		54543CF12598FDF400016E91 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54543CEF2598FDF400016E91 /* BaseViewController.swift */; };
+		54543CF22598FDF400016E91 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54543CF02598FDF400016E91 /* BaseViewController.xib */; };
+		545EA6F125990500003B6D1D /* InvoiceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545EA6F025990500003B6D1D /* InvoiceWorker.swift */; };
+		545EA6F5259F992E003B6D1D /* DespesasWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545EA6F4259F992E003B6D1D /* DespesasWorker.swift */; };
+		545EA6F8259F9AAC003B6D1D /* GenericWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545EA6F7259F9AAC003B6D1D /* GenericWorker.swift */; };
+		545EA6FB259FABB7003B6D1D /* CartoesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545EA6FA259FABB7003B6D1D /* CartoesWorker.swift */; };
 		54675B7E2597D64700693DB9 /* AddCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54675B7D2597D64700693DB9 /* AddCreditCardController.swift */; };
 		54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B53A4C2548DEB000DDC282 /* Movimentacao.swift */; };
 		54B53A512548E12F00DDC282 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B53A502548E12E00DDC282 /* despesas.json */; };
@@ -78,6 +84,12 @@
 		54543CE32598A82D00016E91 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		54543CE72598AE7800016E91 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		54543CEC2598AFC300016E91 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		54543CEF2598FDF400016E91 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		54543CF02598FDF400016E91 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		545EA6F025990500003B6D1D /* InvoiceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceWorker.swift; sourceTree = "<group>"; };
+		545EA6F4259F992E003B6D1D /* DespesasWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DespesasWorker.swift; sourceTree = "<group>"; };
+		545EA6F7259F9AAC003B6D1D /* GenericWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWorker.swift; sourceTree = "<group>"; };
+		545EA6FA259FABB7003B6D1D /* CartoesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartoesWorker.swift; sourceTree = "<group>"; };
 		54675B7D2597D64700693DB9 /* AddCreditCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardController.swift; sourceTree = "<group>"; };
 		54B53A4C2548DEB000DDC282 /* Movimentacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimentacao.swift; sourceTree = "<group>"; };
 		54B53A502548E12E00DDC282 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = despesas.json; sourceTree = "<group>"; };
@@ -125,6 +137,7 @@
 		54165E262548C55500FB4931 /* TabBarCartoes */ = {
 			isa = PBXGroup;
 			children = (
+				545EA6EF259904E2003B6D1D /* Network */,
 				54543CEB2598AF8700016E91 /* Loading */,
 				54675B51258FE7FC00693DB9 /* Controller */,
 				541F15D0256146870061385A /* AddCrediCardVC */,
@@ -138,6 +151,7 @@
 				54165E332548C55900FB4931 /* Assets.xcassets */,
 				54165E382548C55900FB4931 /* Info.plist */,
 				54165E302548C55500FB4931 /* TabBarCartoes.xcdatamodeld */,
+				54543CF02598FDF400016E91 /* BaseViewController.xib */,
 			);
 			path = TabBarCartoes;
 			sourceTree = "<group>";
@@ -173,10 +187,22 @@
 		54543CEB2598AF8700016E91 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
+				54543CEF2598FDF400016E91 /* BaseViewController.swift */,
 				54543CE72598AE7800016E91 /* LoadingView.swift */,
 				54543CEC2598AFC300016E91 /* LoadingView.xib */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		545EA6EF259904E2003B6D1D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				545EA6F7259F9AAC003B6D1D /* GenericWorker.swift */,
+				545EA6F025990500003B6D1D /* InvoiceWorker.swift */,
+				545EA6F4259F992E003B6D1D /* DespesasWorker.swift */,
+				545EA6FA259FABB7003B6D1D /* CartoesWorker.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		54675B51258FE7FC00693DB9 /* Controller */ = {
@@ -309,6 +335,7 @@
 				54165E2F2548C55500FB4931 /* Main.storyboard in Resources */,
 				54543CE42598A82E00016E91 /* loading.json in Resources */,
 				541F15C62560753F0061385A /* AddButtonCollectionCell.xib in Resources */,
+				54543CF22598FDF400016E91 /* BaseViewController.xib in Resources */,
 				542E26BF255395C100413BEC /* invoices.json in Resources */,
 				54165E4C2548D87D00FB4931 /* ExtratoCell.xib in Resources */,
 				542E24D52549DFEA00413BEC /* cartoes.json in Resources */,
@@ -374,9 +401,11 @@
 				542E24E0254A475400413BEC /* Invoice.swift in Sources */,
 				542E24C82549BD7300413BEC /* CreditCardContainerCell.swift in Sources */,
 				54165E2C2548C55500FB4931 /* CrediCardVC.swift in Sources */,
+				54543CF12598FDF400016E91 /* BaseViewController.swift in Sources */,
 				54165E4B2548D87D00FB4931 /* ExtratoCell.swift in Sources */,
 				54165E412548CFEE00FB4931 /* AccountBalanceVC.swift in Sources */,
 				541F15BC25605D3F0061385A /* CrediCardController.swift in Sources */,
+				545EA6FB259FABB7003B6D1D /* CartoesWorker.swift in Sources */,
 				54165E282548C55500FB4931 /* AppDelegate.swift in Sources */,
 				541F15C52560753F0061385A /* AddButtonCollectionCell.swift in Sources */,
 				54165E2A2548C55500FB4931 /* SceneDelegate.swift in Sources */,
@@ -385,9 +414,12 @@
 				541F15CE256146560061385A /* AddCrediCardVC.swift in Sources */,
 				542E24D82549E00500413BEC /* Cartoes.swift in Sources */,
 				54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */,
+				545EA6F125990500003B6D1D /* InvoiceWorker.swift in Sources */,
 				54675B7E2597D64700693DB9 /* AddCreditCardController.swift in Sources */,
+				545EA6F5259F992E003B6D1D /* DespesasWorker.swift in Sources */,
 				54543CE82598AE7800016E91 /* LoadingView.swift in Sources */,
 				542E24D12549D8AC00413BEC /* CreditCardCollectionViewCell.swift in Sources */,
+				545EA6F8259F9AAC003B6D1D /* GenericWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

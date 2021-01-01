@@ -8,7 +8,7 @@
 import UIKit
 
 
-class AccountBalanceVC: UIViewController {
+class AccountBalanceVC: BaseViewController {
     
     @IBOutlet weak var timeLine: UITableView!
     
@@ -18,18 +18,26 @@ class AccountBalanceVC: UIViewController {
         super.viewDidLoad()
         
         self.timeLine.register(UINib(nibName: "ExtratoCell", bundle: nil), forCellReuseIdentifier: "ExtratoCell")
-        
+        self.showLoading()
         self.controller.loadLancamentos{ (result, error) in
+            
             if result{
-                print("result =====>\(result)")
-                self.timeLine.delegate = self
-                self.timeLine.dataSource = self
-                self.timeLine.separatorStyle = .none
+                DispatchQueue.main.async {
+                    print("result =====>\(result)")
+                    self.timeLine.delegate = self
+                    self.timeLine.dataSource = self
+                    self.timeLine.separatorStyle = .none
+                    self.hiddenLoading()
+                }
+               
             }else{
-                print(" ==============> deu erro\(error)")
+                DispatchQueue.main.async {
+                    self.hiddenLoading()
+                    print(" ==============> deu erro\(error)")
+                }
+                
             }
-            
-            
+
         }
         
     }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="67e-ib-E2g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="67e-ib-E2g">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -80,6 +80,37 @@
             </objects>
             <point key="canvasLocation" x="3730" y="66"/>
         </scene>
+        <!--Locais-->
+        <scene sceneID="2XY-25-ZJK">
+            <objects>
+                <viewController id="urm-Oc-Qua" customClass="LocaisVC" customModule="TabBarCartoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LFV-6Q-N2G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6MX-CA-LoB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lz2-Ss-KhW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6MX-CA-LoB" firstAttribute="top" secondItem="LFV-6Q-N2G" secondAttribute="top" id="OhM-0L-inV"/>
+                            <constraint firstItem="6MX-CA-LoB" firstAttribute="trailing" secondItem="lz2-Ss-KhW" secondAttribute="trailing" id="f8H-1L-9wL"/>
+                            <constraint firstAttribute="bottom" secondItem="6MX-CA-LoB" secondAttribute="bottom" id="gQ6-sF-HAl"/>
+                            <constraint firstItem="6MX-CA-LoB" firstAttribute="leading" secondItem="lz2-Ss-KhW" secondAttribute="leading" id="tVx-Kw-o8p"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Locais" image="map.fill" catalog="system" selectedImage="map.fill" id="dh5-Iq-Xc4"/>
+                    <navigationItem key="navigationItem" id="tyb-yo-3yL"/>
+                    <connections>
+                        <outlet property="maps" destination="6MX-CA-LoB" id="z4A-uR-jUn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIX-ZV-Ghi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3124.6376811594205" y="-660.26785714285711"/>
+        </scene>
         <!--AddCrediCard-->
         <scene sceneID="hnk-JE-dBr">
             <objects>
@@ -149,11 +180,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" systemColor="systemPurpleColor"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.18949463391172963" green="0.17000200810246052" blue="0.33807899746192893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="zrU-Kb-CFl" kind="relationship" relationship="viewControllers" id="KX4-3O-YzM"/>
                         <segue destination="O8Z-YV-UJc" kind="relationship" relationship="viewControllers" id="gNu-QO-0Jw"/>
+                        <segue destination="urm-Oc-Qua" kind="relationship" relationship="viewControllers" id="gEo-zy-UQl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjX-ic-FG7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -164,6 +196,7 @@
     <resources>
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

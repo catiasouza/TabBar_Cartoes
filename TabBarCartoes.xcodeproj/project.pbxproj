@@ -48,6 +48,9 @@
 		54675B7E2597D64700693DB9 /* AddCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54675B7D2597D64700693DB9 /* AddCreditCardController.swift */; };
 		54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B53A4C2548DEB000DDC282 /* Movimentacao.swift */; };
 		54B53A512548E12F00DDC282 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B53A502548E12E00DDC282 /* despesas.json */; };
+		54D96BAB25AD0B42001C6648 /* Locais.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D96BAA25AD0B42001C6648 /* Locais.json */; };
+		54D96BAE25AD0BEF001C6648 /* LocaisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96BAD25AD0BEF001C6648 /* LocaisVC.swift */; };
+		54D96BB225AD0E21001C6648 /* Locais.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96BB125AD0E21001C6648 /* Locais.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +98,9 @@
 		54675B7D2597D64700693DB9 /* AddCreditCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardController.swift; sourceTree = "<group>"; };
 		54B53A4C2548DEB000DDC282 /* Movimentacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimentacao.swift; sourceTree = "<group>"; };
 		54B53A502548E12E00DDC282 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = despesas.json; sourceTree = "<group>"; };
+		54D96BAA25AD0B42001C6648 /* Locais.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Locais.json; sourceTree = "<group>"; };
+		54D96BAD25AD0BEF001C6648 /* LocaisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaisVC.swift; sourceTree = "<group>"; };
+		54D96BB125AD0E21001C6648 /* Locais.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locais.swift; sourceTree = "<group>"; };
 		74F98A285D37DF1BEB1D64AC /* Pods-TabBarCartoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarCartoes.debug.xcconfig"; path = "Target Support Files/Pods-TabBarCartoes/Pods-TabBarCartoes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +145,7 @@
 		54165E262548C55500FB4931 /* TabBarCartoes */ = {
 			isa = PBXGroup;
 			children = (
+				54D96BB525AD147E001C6648 /* Locais */,
 				545EA6EF259904E2003B6D1D /* Network */,
 				54543CEB2598AF8700016E91 /* Loading */,
 				54675B51258FE7FC00693DB9 /* Controller */,
@@ -252,6 +259,8 @@
 		54B53A4B2548DE9400DDC282 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				54D96BB125AD0E21001C6648 /* Locais.swift */,
+				54D96BAA25AD0B42001C6648 /* Locais.json */,
 				542E26BE255395C100413BEC /* invoices.json */,
 				54543CE32598A82D00016E91 /* loading.json */,
 				54B53A4C2548DEB000DDC282 /* Movimentacao.swift */,
@@ -262,6 +271,14 @@
 				54B53A502548E12E00DDC282 /* despesas.json */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		54D96BB525AD147E001C6648 /* Locais */ = {
+			isa = PBXGroup;
+			children = (
+				54D96BAD25AD0BEF001C6648 /* LocaisVC.swift */,
+			);
+			path = Locais;
 			sourceTree = "<group>";
 		};
 		645F95CD3D89FC94D1733A4F /* Pods */ = {
@@ -346,6 +363,7 @@
 				542E24D22549D8AC00413BEC /* CreditCardCollectionViewCell.xib in Resources */,
 				54543CED2598AFC300016E91 /* LoadingView.xib in Resources */,
 				54B53A512548E12F00DDC282 /* despesas.json in Resources */,
+				54D96BAB25AD0B42001C6648 /* Locais.json in Resources */,
 				542E26C72553974C00413BEC /* invoice.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,9 +437,11 @@
 				542E24D82549E00500413BEC /* Cartoes.swift in Sources */,
 				54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */,
 				545EA6F125990500003B6D1D /* InvoiceWorker.swift in Sources */,
+				54D96BB225AD0E21001C6648 /* Locais.swift in Sources */,
 				54675B7E2597D64700693DB9 /* AddCreditCardController.swift in Sources */,
 				545EA6F5259F992E003B6D1D /* DespesasWorker.swift in Sources */,
 				54543CE82598AE7800016E91 /* LoadingView.swift in Sources */,
+				54D96BAE25AD0BEF001C6648 /* LocaisVC.swift in Sources */,
 				542E24D12549D8AC00413BEC /* CreditCardCollectionViewCell.swift in Sources */,
 				545EA6F8259F9AAC003B6D1D /* GenericWorker.swift in Sources */,
 			);

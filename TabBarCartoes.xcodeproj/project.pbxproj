@@ -51,6 +51,8 @@
 		54D96BAB25AD0B42001C6648 /* Locais.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D96BAA25AD0B42001C6648 /* Locais.json */; };
 		54D96BAE25AD0BEF001C6648 /* LocaisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96BAD25AD0BEF001C6648 /* LocaisVC.swift */; };
 		54D96BB225AD0E21001C6648 /* Locais.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96BB125AD0E21001C6648 /* Locais.swift */; };
+		54EF55C725B24FCB006FADAD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF55C625B24FCB006FADAD /* DetailsViewController.swift */; };
+		54EF562225B637DE006FADAD /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF562125B637DE006FADAD /* UIView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +103,8 @@
 		54D96BAA25AD0B42001C6648 /* Locais.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Locais.json; sourceTree = "<group>"; };
 		54D96BAD25AD0BEF001C6648 /* LocaisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaisVC.swift; sourceTree = "<group>"; };
 		54D96BB125AD0E21001C6648 /* Locais.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locais.swift; sourceTree = "<group>"; };
+		54EF55C625B24FCB006FADAD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		54EF562125B637DE006FADAD /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		74F98A285D37DF1BEB1D64AC /* Pods-TabBarCartoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarCartoes.debug.xcconfig"; path = "Target Support Files/Pods-TabBarCartoes/Pods-TabBarCartoes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -277,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				54D96BAD25AD0BEF001C6648 /* LocaisVC.swift */,
+				54EF55C625B24FCB006FADAD /* DetailsViewController.swift */,
+				54EF562125B637DE006FADAD /* UIView+extension.swift */,
 			);
 			path = Locais;
 			sourceTree = "<group>";
@@ -428,12 +434,14 @@
 				54165E412548CFEE00FB4931 /* AccountBalanceVC.swift in Sources */,
 				541F15BC25605D3F0061385A /* CrediCardController.swift in Sources */,
 				545EA6FB259FABB7003B6D1D /* CartoesWorker.swift in Sources */,
+				54EF55C725B24FCB006FADAD /* DetailsViewController.swift in Sources */,
 				54165E282548C55500FB4931 /* AppDelegate.swift in Sources */,
 				541F15C52560753F0061385A /* AddButtonCollectionCell.swift in Sources */,
 				54165E2A2548C55500FB4931 /* SceneDelegate.swift in Sources */,
 				541F15BF256060F20061385A /* InvoiceController.swift in Sources */,
 				54165E322548C55500FB4931 /* TabBarCartoes.xcdatamodeld in Sources */,
 				541F15CE256146560061385A /* AddCrediCardVC.swift in Sources */,
+				54EF562225B637DE006FADAD /* UIView+extension.swift in Sources */,
 				542E24D82549E00500413BEC /* Cartoes.swift in Sources */,
 				54B53A4D2548DEB000DDC282 /* Movimentacao.swift in Sources */,
 				545EA6F125990500003B6D1D /* InvoiceWorker.swift in Sources */,

@@ -8,32 +8,28 @@
 import Foundation
 import MapKit
 
-
-class Agencia: NSObject, MKAnnotation {
-    var title: String?
-    var subtitle: String?
-    var categoria: String?
-    var coordinate: CLLocationCoordinate2D
+class Locais: Codable{
+    let agencias:[Agencia]
     
-    init(title: String?,subtitle: String?,categoria: String?,coordinate: CLLocationCoordinate2D){
-        
-        self.title = title
-        self.subtitle = subtitle
-        self.categoria = categoria
-        self.coordinate = coordinate
-        super.init()
-    }
-    init(json: [String: String]) {
-        self.title = json["title"] ?? "No title"
-        self.subtitle = json["subtitle"]
-        self.categoria = json["categoria"]
-        
-        if let latitute = Double(json["lat"] ?? ""),
-           let longitude = Double (json["lng"] ?? "") {
-            self.coordinate = CLLocationCoordinate2D(latitude: latitute, longitude: longitude)
-        }else {
-            self.coordinate = CLLocationCoordinate2D()
-        }
+    init(agencias: [Agencia]) {
+        self.agencias = agencias
     }
 }
-
+class Agencia: NSObject, Codable, MKAnnotation {
+  let title, subtitle, categoria: String?
+  let lng, lat: String
+  var coordinate: CLLocationCoordinate2D {
+    let latFloat = Float(self.lat) ?? 0.0
+    let lngFloat = Float(self.lng) ?? 0.0
+    let lat = CLLocationDegrees(latFloat)
+    let lng = CLLocationDegrees(lngFloat)
+    return CLLocationCoordinate2D(latitude: lat, longitude: lng)
+  }
+  init(title: String, subtitle: String, categoria: String, lat: String, lng: String) {
+    self.title = title
+    self.subtitle = subtitle
+    self.categoria = categoria
+    self.lat = lat
+    self.lng = lng
+  }
+}

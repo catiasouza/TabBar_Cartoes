@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (5.4.1)
+  - DynamicBlurView (4.1.0)
   - lottie-ios (3.1.9)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - lottie-ios (~> 3.1)
+  - PopupDialog (~> 1.1)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - DynamicBlurView
     - lottie-ios
+    - PopupDialog
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
   lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
 
-PODFILE CHECKSUM: 2e212c101a85c82eb07ff7da7cdbc56bcb416f7a
+PODFILE CHECKSUM: 29623d561f09a45b3b6aca9ea68e4ce4c6018199
 
 COCOAPODS: 1.10.0
